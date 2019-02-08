@@ -1,0 +1,22 @@
+define({
+  root: ({
+    _widgetLabel: "Nearby Summary",
+    _featureAction_ShowVertex: "Show Vertex Count",
+    searchRadiusTitle: "Enter a search radius",
+	searchWithinText: "Search within (miles):",
+    draw: "Draw",
+    showResultsBtn: "Show results",
+	clearResultsBtn: "Clear results",
+	resultsTitle: "Service area demographics",
+	demographics: "Demographics",
+	counts: "Counts",
+	totalPop: "Population",
+	totalAsian: "Asian",
+	totalBlack: "Black",
+	totalHispanic: "Hispanic",
+	totalWhite: "White",
+	totalOther: "Other",
+	totalHouseholds: "Households",
+	totalHousingUnits: "Housing units",
+  }),
+});
