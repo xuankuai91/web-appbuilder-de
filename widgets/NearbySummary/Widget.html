@@ -1,0 +1,61 @@
+<div>
+  <div id="search_buffer" class="input">
+    <span class='jimu-widget-title'><h2>${nls.searchRadiusTitle}</h2></span>
+      
+    <div id="input_container">
+      <span class='jimu-widget-subtitle'><p>${nls.searchWithinText}</p></span>
+      <input type="text" id="radius_box" value="10"></input>
+      <div data-dojo-attach-point="drawBox" data-dojo-type="jimu/dijit/DrawBox" data-dojo-props="types:['point'],showClear:false"></div>
+    </div>
+    
+    <div id="btn_container">
+      <div id="show_results_btn" class="jimu-btn" data-dojo-attach-event="onclick:onShowResultsClick">${nls.showResultsBtn}</div>
+      <div id="clear_results_btn" class="jimu-btn" data-dojo-attach-event="onclick:onClearResultsClick">${nls.clearResultsBtn}</div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div id="results_container">
+    <span class='jimu-widget-title'><h2>${nls.resultsTitle}</h2></span>
+
+    <table>
+      <tr class="table-head">
+        <th class="result-title">${nls.demographics}</th>
+        <th class="query-results"><p>${nls.counts}</p></th>
+      </tr>
+      <tr class="odd">
+        <th class="result-title">${nls.totalPop}</th>
+        <th id="total_pop" class="query-results"></th>
+      </tr>
+      <tr class="even">
+        <th class="result-title">${nls.totalAsian}</th>
+        <th id="total_asian" class="query-results"></th>
+      </tr>
+      <tr class="odd">
+        <th class="result-title">${nls.totalBlack}</th>
+        <th id="total_black" class="query-results"></th>
+      </tr>
+      <tr class="even">
+        <th class="result-title">${nls.totalHispanic}</th>
+        <th id="total_hispanic" class="query-results"></th>
+      </tr>
+      <tr class="odd">
+        <th class="result-title">${nls.totalWhite}</th>
+        <th id="total_white" class="query-results"></th>
+      </tr>
+      <tr class="even">
+        <th class="result-title">${nls.totalOther}</th>
+        <th id="total_other" class="query-results"></th>
+      </tr>
+      <tr class="odd">
+        <th class="result-title">${nls.totalHouseholds}</th>
+        <th id="total_households" class="query-results"></th>
+      </tr>
+      <tr class="even">
+        <th class="result-title">${nls.totalHousingUnits}</th>
+        <th id="total_housing_units" class="query-results"></th>
+      </tr>
+    </table>
+  </div>
+</div>
