@@ -1,0 +1,10 @@
+{
+  "name": "NearbySummary",
+  "platform": "HTML",
+  "version": "2.10",
+  "wabVersion": "2.10",
+  "author": "Xuan Kuai",
+  "description": "This is the widget that displays demographic information with in a search radius on map.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}
