@@ -1,0 +1,107 @@
+#_6_panel {
+    height: 500px !important;
+}
+
+.input {
+	margin-bottom: 10px;
+}
+
+#input_container {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+h2 {
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+p {
+	width: auto;
+	display: inline-block;
+}
+
+#radius_box {
+	width: calc(100% - 186.64px);;
+	height: 38px;
+	padding-left: 10px;  /* Create some space between text and the boundary of input box*/
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.jimu-draw-box {
+	width: 38px !important;
+	height: 38px;
+	float: right;
+	margin-left: 5px;
+	display: inline-block;
+}
+
+.draw-items {
+	height: 38px;
+}
+
+.draw-item {
+	margin: 0px !important;
+	width: 38px !important;
+	height: 38px !important;
+}
+
+#btn_container {
+	margin-bottom: 10px;
+}
+
+#show_results_btn {
+	width: 150px;
+}
+
+#clear_results_btn {
+	width: 150px;
+	float: right;
+	display: inline-block;
+}
+
+hr {
+	margin-bottom: 14px;
+}
+
+table {
+	width: 100%;
+}
+
+tr {
+	height: 25px;
+}
+
+.table-head {
+	background-color: #485566;
+	color: white;
+}
+
+.table-head > th {
+	font-weight: bold;
+}
+
+.odd {
+	background-color: #DADDE0;
+}
+
+.even {
+	background-color: #B5BBC1;
+}
+
+th {
+	font-size: 14px;
+	margin-top: 4px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.result-title {
+	float: left;
+}
+
+.query-results > p {
+	float: right;
+}
