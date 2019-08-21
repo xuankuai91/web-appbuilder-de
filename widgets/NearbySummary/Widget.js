@@ -175,14 +175,14 @@ define([
             }
 
             // Create HTML <p> elements that resides in the <th> elements
-            var totalPopText = "<p>" + totalPop + "</p>";
-            var totalAsianText = "<p>" + totalAsian + "</p>";
-            var totalBlackText = "<p>" + totalBlack + "</p>";
-            var totalHispanicText = "<p>" + totalHispanic + "</p>";
-            var totalWhiteText = "<p>" + totalWhite + "</p>";
-            var totalOtherText = "<p>" + totalOther + "</p>";
-            var totalHouseholdsText = "<p>" + totalHouseholds + "</p>";
-            var totalHousingUnitsText = "<p>" + totalHousingUnits + "</p>";
+            var totalPopText = "<p>" + totalPop.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalAsianText = "<p>" + totalAsian.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalBlackText = "<p>" + totalBlack.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalHispanicText = "<p>" + totalHispanic.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalWhiteText = "<p>" + totalWhite.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalOtherText = "<p>" + totalOther.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalHouseholdsText = "<p>" + totalHouseholds.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
+            var totalHousingUnitsText = "<p>" + totalHousingUnits.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") + "</p>";
 
             // Push <p> elements to the <th> elements
             dom.byId("total_pop").innerHTML = totalPopText;
@@ -196,14 +196,14 @@ define([
 
             // Set attributes for buffer
             var bufferAttributes = {
-              population: totalPop,
-              asian: totalAsian,
-              black: totalBlack,
-              hispanic: totalHispanic,
-              white: totalWhite,
-              others: totalOther,
-              households: totalHouseholds,
-              housingUnits: totalHousingUnits
+              population: totalPopText,
+              asian: totalAsianText,
+              black: totalBlackText,
+              hispanic: totalHispanicText,
+              white: totalWhiteText,
+              others: totalOtherText,
+              households: totalHouseholdsText,
+              housingUnits: totalHousingUnitsText
             };
 
             globalGraphic.setAttributes(bufferAttributes);
