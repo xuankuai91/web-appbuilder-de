@@ -1,0 +1,317 @@
+<div>
+  <div class="tab-header" data-dojo-attach-point="tabHeader" data-dojo-attach-event="onclick:onTabHeaderClick">
+    <div class="tab-item jimu-ellipsis jimu-float-leading selected" data-dojo-attach-point="resourceTabItem">${nls.resourceLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-leading" data-dojo-attach-point="demoTabItem">${nls.demoLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-leading" data-dojo-attach-point="specialTabItem">${nls.specialLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-trailing" data-dojo-attach-point="empTabItem">${nls.empLabel}</div>
+  </div>
+
+  <div class="tabs-container">
+    <div id="resource_results" class="tab-view selected" data-dojo-attach-point="resourceTabView">
+      <span class='jimu-widget-title'><h2>${nls.resourcesTitle}</h2></span>
+
+      <table id="resource_table">
+        <tr class="table-head">
+          <th class="item-column">${nls.resource}</th>
+          <th class="result-column"><p>${nls.count}</p></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalAEL}</th>
+          <th id="total_ael" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalExoffender}</th>
+          <th id="total_exoffender" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalETPS}</th>
+          <th id="total_etps" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalParole}</th>
+          <th id="total_parole" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalReentry}</th>
+          <th id="total_reentry" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalCO}</th>
+          <th id="total_co" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalVR}</th>
+          <th id="total_vr" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalLibrary}</th>
+          <th id="total_library" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalJobAd}</th>
+          <th id="total_job_ad" class="result-column"></th>
+        </tr>
+      </table>
+
+      <div id="query_results_btn" class="btns-container">
+        <div id="resource_export" class="jimu-btn" data-dojo-attach-event="onclick:onResExportClick">${nls.exportBtn}</div>
+        <div id="clear_results" class="jimu-btn" data-dojo-attach-event="onclick:onClearResultsClick">${nls.clearResultsBtn}</div>
+      </div>
+    </div>
+
+    <div id="demo_results" class="tab-view" data-dojo-attach-point="demoTabView">
+      <span class='jimu-widget-title'><h2>${nls.demoResultsTitle}</h2></span>
+
+      <table id="demo_table">
+        <tr class="table-head">
+          <th class="item-column">${nls.demographics}</th>
+          <th class="result-column"><p>${nls.count}</p></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalPop}</th>
+          <th id="total_pop" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalFemale}</th>
+          <th id="total_female" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalMale}</th>
+          <th id="total_male" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalUnder18}</th>
+          <th id="total_under_18" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total1824}</th>
+          <th id="total_18_24" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total2534}</th>
+          <th id="total_25_34" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total3544}</th>
+          <th id="total_35_44" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total4554}</th>
+          <th id="total_45_54" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total5564}</th>
+          <th id="total_55_64" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total6574}</th>
+          <th id="total_65_74" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalAbove75}</th>
+          <th id="total_above_75" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalNoEnglish}</th>
+          <th id="total_no_english" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalNoHS}</th>
+          <th id="total_no_hs" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalHS}</th>
+          <th id="total_hs" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalSomeCollege}</th>
+          <th id="total_some_college" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalAssociates}</th>
+          <th id="total_associates" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalBachelors}</th>
+          <th id="total_bachelors" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalPostGrad}</th>
+          <th id="total_post_grad" class="result-column"></th>
+        </tr>
+      </table>
+
+      <div id="query_results_btn" class="btns-container">
+        <div id="demo_export" class="jimu-btn" data-dojo-attach-event="onclick:onDemoExportClick">${nls.exportBtn}</div>
+        <div id="clear_results" class="jimu-btn" data-dojo-attach-event="onclick:onClearResultsClick">${nls.clearResultsBtn}</div>
+      </div>
+    </div>
+
+    <div id="special_results" class="tab-view" data-dojo-attach-point="specialTabView">
+      <span class='jimu-widget-title'><h2>${nls.specialResultsTitle}</h2></span>
+
+      <table id="special_table">
+        <tr class="table-head">
+          <th class="item-column">${nls.demographics}</th>
+          <th class="result-column"><p>${nls.count}</p></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalDisabled}</th>
+          <th id="total_disabled" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalVeteran}</th>
+          <th id="total_veteran" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalUnemployed}</th>
+          <th id="total_unemployed" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalPoverty}</th>
+          <th id="total_poverty" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalPubAssist}</th>
+          <th id="total_pub_assist" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalDisconnYouth}</th>
+          <th id="total_disconn_youth" class="result-column"></th>
+        </tr>
+      </table>
+
+      <div id="query_results_btn" class="btns-container">
+        <div id="special_export" class="jimu-btn" data-dojo-attach-event="onclick:onSpecialExportClick">${nls.exportBtn}</div>
+        <div id="clear_results" class="jimu-btn" data-dojo-attach-event="onclick:onClearResultsClick">${nls.clearResultsBtn}</div>
+      </div>
+    </div>
+
+    <div id="emp_results" class="tab-view" data-dojo-attach-point="empTabView">
+      <span class='jimu-widget-title'><h2>${nls.empResultsTitle}</h2></span>
+
+      <table id="emp_table">
+        <tr class="table-head">
+          <th class="item-column">${nls.naics}</th>
+          <th class="result-column"><p>${nls.business}</p></th>
+          <th class="result-column"><p>${nls.employee}</p></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalNAICS}</th>
+          <th id="total_bus" class="result-column"></th>
+          <th id="total_emp" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.totalCO}</th>
+          <th id="total_bus_co" class="result-column"></th>
+          <th id="total_emp_co" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.totalIO}</th>
+          <th id="total_bus_io" class="result-column"></th>
+          <th id="total_emp_io" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total11}</th>
+          <th id="total_bus_11" class="result-column"></th>
+          <th id="total_emp_11" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total21}</th>
+          <th id="total_bus_21" class="result-column"></th>
+          <th id="total_emp_21" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total22}</th>
+          <th id="total_bus_22" class="result-column"></th>
+          <th id="total_emp_22" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total23}</th>
+          <th id="total_bus_23" class="result-column"></th>
+          <th id="total_emp_23" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total3133}</th>
+          <th id="total_bus_31_33" class="result-column"></th>
+          <th id="total_emp_31_33" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total42}</th>
+          <th id="total_bus_42" class="result-column"></th>
+          <th id="total_emp_42" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total4445}</th>
+          <th id="total_bus_44_45" class="result-column"></th>
+          <th id="total_emp_44_45" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total4849}</th>
+          <th id="total_bus_48_49" class="result-column"></th>
+          <th id="total_emp_48_49" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total51}</th>
+          <th id="total_bus_51" class="result-column"></th>
+          <th id="total_emp_51" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total52}</th>
+          <th id="total_bus_52" class="result-column"></th>
+          <th id="total_emp_52" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total53}</th>
+          <th id="total_bus_53" class="result-column"></th>
+          <th id="total_emp_53" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total54}</th>
+          <th id="total_bus_54" class="result-column"></th>
+          <th id="total_emp_54" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total55}</th>
+          <th id="total_bus_55" class="result-column"></th>
+          <th id="total_emp_55" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total56}</th>
+          <th id="total_bus_56" class="result-column"></th>
+          <th id="total_emp_56" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total61}</th>
+          <th id="total_bus_61" class="result-column"></th>
+          <th id="total_emp_61" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total62}</th>
+          <th id="total_bus_62" class="result-column"></th>
+          <th id="total_emp_62" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total71}</th>
+          <th id="total_bus_71" class="result-column"></th>
+          <th id="total_emp_71" class="result-column"></th>
+        </tr>
+        <tr class="odd">
+          <th class="item-column">${nls.total72}</th>
+          <th id="total_bus_72" class="result-column"></th>
+          <th id="total_emp_72" class="result-column"></th>
+        </tr>
+        <tr class="even">
+          <th class="item-column">${nls.total81}</th>
+          <th id="total_bus_81" class="result-column"></th>
+          <th id="total_emp_81" class="result-column"></th>
+        </tr>
+      </table>
+
+      <div id="query_results_btn" class="btns-container">
+        <div id="emp_export" class="jimu-btn" data-dojo-attach-event="onclick:onEmpExportClick">${nls.exportBtn}</div>
+        <div id="clear_results" class="jimu-btn" data-dojo-attach-event="onclick:onClearResultsClick">${nls.clearResultsBtn}</div>
+      </div>
+    </div>
+  </div>
+</div>
