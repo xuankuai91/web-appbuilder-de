@@ -1,0 +1,68 @@
+<div>
+  <div class="tab-header" data-dojo-attach-point="tabHeader" data-dojo-attach-event="onclick:onTabHeaderClick">
+    <div class="tab-item jimu-ellipsis jimu-float-leading selected" data-dojo-attach-point="bufferTabItem">${nls.bufferLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-leading" data-dojo-attach-point="zipTabItem">${nls.zipLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-trailing" data-dojo-attach-point="countyTabItem">${nls.countyLabel}</div>
+  </div>
+
+  <div class="tab-container">
+    <div id="buffer" class="tab-view selected" data-dojo-attach-point="bufferTabView">
+      <span class='jimu-widget-title'><h2>${nls.searchRadiusTitle}</h2></span>
+        
+      <div id="input" class="input-container">
+        <span class='jimu-widget-subtitle'><p>${nls.searchRadiusText}</p></span>
+        <input id="radius_box" class="input-box" type="text" placeholder="Enter a buffer distance"></input>
+        <div data-dojo-attach-point="bufferDrawBox" data-dojo-type="jimu/dijit/DrawBox" data-dojo-props="type:'marker'"></div>
+        <span class='jimu-widget-note'>${nls.bufferNote}</span>
+      </div>
+
+      <div id="slider"></div>
+    </div>
+
+    <div id="zip_code" class="tab-view" data-dojo-attach-point="zipTabView">
+      <span class='jimu-widget-title'><h2>${nls.selectZIPCodeTitle}</h2></span>
+        
+      <div id="input" class="input-container">
+        <span class='jimu-widget-subtitle'><p>${nls.selectZIPCodeText}</p></span>
+        <input id="zip_box" class="input-box" type="text" placeholder="Enter a ZIP Code"></input>
+        <div data-dojo-attach-point="zipDrawBox" data-dojo-type="jimu/dijit/DrawBox" data-dojo-props="type:'marker'"></div>
+        <span class='jimu-widget-note'>${nls.zipNote}</span>
+      </div>
+    </div>
+
+    <div id="county" class="tab-view" data-dojo-attach-point="countyTabView">
+      <span class='jimu-widget-title'><h2>${nls.selectCountyTitle}</h2></span>
+        
+      <div id="input" class="input-container">
+        <span class='jimu-widget-subtitle'><p>${nls.selectCountyText}</p></span>
+        <select id="county_box">
+          <option value="" disabled selected>${nls.default}</option>
+          <option value="austin">${nls.austin}</option>
+          <option value="brazoria">${nls.brazoria}</option>
+          <option value="chambers">${nls.chambers}</option>
+          <option value="colorado">${nls.colorado}</option>
+          <option value="fort bend">${nls.fortBend}</option>
+          <option value="galveston">${nls.galveston}</option>
+          <option value="harris">${nls.harris}</option>
+          <option value="liberty">${nls.liberty}</option>
+          <option value="matagorda">${nls.matagorda}</option>
+          <option value="montgomery">${nls.montgomery}</option>
+          <option value="walker">${nls.walker}</option>
+          <option value="waller">${nls.waller}</option>
+          <option value="wharton">${nls.wharton}</option>
+        </select>
+        <div data-dojo-attach-point="countyDrawBox" data-dojo-type="jimu/dijit/DrawBox" data-dojo-props="type:'marker'"></div>
+        <span class='jimu-widget-note'>${nls.countyNote}</span>
+      </div>
+    </div>
+  </div>
+      
+  <div id="query_geometry_btn" class="btns-container">
+    <div id="calculate" class="jimu-btn" data-dojo-attach-event="onclick:onCalculateClick">${nls.calculateBtn}</div>
+    <div id="show_results" class="jimu-btn jimu-state-disabled" data-dojo-attach-point="showResultsBtn" data-dojo-attach-event="onclick:onShowResultsClick">${nls.showResultsBtn}</div>
+  </div>
+
+  <div class="progress-bar-container">
+    <div id="progress_bar" data-dojo-attach-point="progressBar" data-dojo-type="dijit/ProgressBar" data-dojo-props='value:Infinity'></div>
+  </div>
+</div>

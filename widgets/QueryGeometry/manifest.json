@@ -1,0 +1,10 @@
+{
+  "name": "QueryGeometry",
+  "platform": "HTML",
+  "version": "2.10",
+  "wabVersion": "2.10",
+  "author": "Xuan Kuai",
+  "description": "This is the widget that queries information within a search radius, or a selection of ZIP Code area/county on map. The query results are transmitted to the Query Results widget",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}
