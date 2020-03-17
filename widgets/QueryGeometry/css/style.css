@@ -1,0 +1,139 @@
+#_6_panel {
+  height: 500px !important;
+}
+
+.tab-header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+}
+
+.tab-item {
+  width: 33.33%;
+  height: 100%;
+  line-height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 0 5px;
+}
+
+.tab-item.selected {
+  border-bottom: 2px solid #898989;
+  font-weight: bold;
+  color: #000;
+}
+
+.tab-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 30px;
+  bottom: 0;
+  margin-top: 10px;
+}
+
+.tab-view {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tab-view.selected {
+  display: block;
+}
+
+.input-container {
+  width: 100%;
+  display: inline-block;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+p {
+  width: auto;
+  display: inline-block;
+}
+
+#buffer > .input-container > .input-box {
+  width: calc(100% - 186.64px);
+  height: 38px;
+  padding-left: 10px;  /* Create some space between text and the boundary of input box*/
+  margin-left: 5px;
+  display: inline-block;
+}
+
+#zip_code > .input-container > .input-box {
+  width: calc(100% - 114.88px);
+  height: 38px;
+  padding-left: 10px;  /* Create some space between text and the boundary of input box*/
+  margin-left: 5px;
+  display: inline-block;
+}
+
+#county > .input-container > select {
+  width: calc(100% - 102.22px);
+  height: 38px;
+  padding-left: 10px;  /* Create some space between text and the boundary of input box*/
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.jimu-draw-box {
+  width: 38px !important;
+  height: 38px;
+  float: right;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.draw-items {
+  height: 38px;
+}
+
+.draw-item {
+  margin: 0px !important;
+  width: 38px !important;
+  height: 38px !important;
+}
+
+#query_geometry_btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 149px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.jimu-btn {
+  width: 120px;
+}
+
+#show_results {
+  float: right;
+  display: inline-block;
+}
+
+hr {
+  margin-bottom: 14px;
+}
+
+.progress-bar-container {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 192px;
+  margin-top: 10px;
+}
