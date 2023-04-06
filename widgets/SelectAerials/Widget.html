@@ -1,0 +1,122 @@
+<div>
+  <div class="panel-item tab-header" data-dojo-attach-point="tabHeader" data-dojo-attach-event="onclick:onTabHeaderClick">
+    <div class="tab-item jimu-ellipsis jimu-float-leading selected" data-dojo-attach-point="selectTabItem">${nls.selectTileTabLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-leading" data-dojo-attach-point="drawTabItem">${nls.drawShapeTabLabel}</div>
+    <div class="tab-item jimu-ellipsis jimu-float-trailing" data-dojo-attach-point="addTabItem">${nls.addLayerTabLabel}</div>
+  </div>
+
+  <div id="product" class="panel-item" data-dojo-attach-point="productSelection">
+    <span class="panel-item jimu-widget-title"><h2>${nls.productSelectionTitle}</h2></span>
+
+    <select id="product_box">
+      <option value="default" disabled selected>${nls.defaultProduct}</option>
+      <option value="RGB_6in_2022">${nls.rgb6Inch2022}</option>
+      <option value="CIR_6in_2022">${nls.cir6Inch2022}</option>
+      <option value="RGB_6in_2020">${nls.rgb6Inch2020}</option>
+      <option value="RGB_1ft_2020">${nls.rgb1Foot2020}</option>
+      <option value="CIR_6in_2020">${nls.cir6Inch2020}</option>
+      <option value="RGB_6in_2018">${nls.rgb6Inch2018}</option>
+      <option value="RGB_1ft_2018">${nls.rgb1Foot2018}</option>
+      <option value="CIR_6in_2018">${nls.cir6Inch2018}</option>
+      <option value="CIR_1ft_2018">${nls.cir1Foot2018}</option>
+      <option value="RGB_6in_2016">${nls.rgb6Inch2016}</option>
+      <option value="CIR_6in_2016">${nls.cir6Inch2016}</option>
+      <option value="RGB_1ft_2015">${nls.rgb1Foot2015}</option>
+      <option value="CIR_1ft_2015">${nls.cir1Foot2015}</option>
+      <option value="RGB_6in_2014">${nls.rgb6Inch2014}</option>
+      <option value="RGB_1ft_2014">${nls.rgb1Foot2014}</option>
+      <option value="CIR_1ft_2014">${nls.cir1Foot2014}</option>
+      <option value="RGB_6in_2012">${nls.rgb6Inch2012}</option>
+      <option value="RGB_1ft_2012">${nls.rgb1Foot2012}</option>
+      <option value="RGB_6in_2010">${nls.rgb6Inch2010}</option>
+      <option value="RGB_1ft_2010">${nls.rgb1Foot2010}</option>
+      <option value="RGB_6in_2008">${nls.rgb6Inch2008}</option>
+      <option value="RGB_1ft_2008">${nls.rgb1Foot2008}</option>
+      <option value="RGB_6in_2006">${nls.rgb6Inch2006}</option>
+      <option value="RGB_1ft_2006">${nls.rgb1Foot2006}</option>
+      <option value="RGB_1ft_2004">${nls.rgb1Foot2004}</option>
+      <option value="RGB_1ft_2002">${nls.rgb1Foot2002}</option>
+      <option value="RGB_1ft_2001">${nls.rgb1Foot2001}</option>
+      <option value="RGB_1ft_2000">${nls.rgb1Foot2000}</option>
+    </select>
+  </div>
+
+  <div class="tab-container">
+    <div id="select" class="tab-view selected" data-dojo-attach-point="selectTabView">
+      <div id="coverage" class="panel-item" data-dojo-attach-point="coverageSelection">
+        <span class='jimu-widget-title'><h2>${nls.coverageSelectionTitle}</h2></span>
+
+        <select id="coverage_box" disabled>
+          <option disabled selected value="default">${nls.defaultCoverage}</option>
+          <option value="Full Extent">${nls.fullExtent}</option>
+          <option value="County">${nls.county}</option>
+          <option value="Tile">${nls.tile}</option>
+          <option value="County + Tile">${nls.countyTile}</option>
+        </select>
+      </div>
+
+      <div id="county" class="panel-item hidden" data-dojo-attach-point="countySelection">
+        <span class='jimu-widget-title'><h2>${nls.countySelectionTitle}</h2></span>
+
+        <select id="county_box">
+          <option disabled selected value="default">${nls.defaultCounty}</option>
+          <option value="austin">${nls.austin}</option>
+          <option value="brazoria">${nls.brazoria}</option>
+          <option value="chambers">${nls.chambers}</option>
+          <option value="colorado">${nls.colorado}</option>
+          <option value="fort bend">${nls.fortBend}</option>
+          <option value="galveston">${nls.galveston}</option>
+          <option value="harris">${nls.harris}</option>
+          <option value="liberty">${nls.liberty}</option>
+          <option value="matagorda">${nls.matagorda}</option>
+          <option value="montgomery">${nls.montgomery}</option>
+          <option value="walker">${nls.walker}</option>
+          <option value="waller">${nls.waller}</option>
+          <option value="wharton">${nls.wharton}</option>
+        </select>
+      </div>
+
+      <div id="tile" class="panel-item hidden" data-dojo-attach-point="tileSelection">
+        <span class='jimu-widget-title'><h2>${nls.tileSelectionTitle}</h2></span>
+          
+        <div id="tile_input" class="input-container">
+          <input id="tile_box" class="input-box" type="text" placeholder="Enter tile number(s)"></input>
+        </div>
+
+        <div class="horizontal-separator"><p>${nls.or}</p></div>
+
+        <div id="locate" class="btns-container">
+          <div id="use_address" class="jimu-btn jimu-state-disabled" data-dojo-attach-point="useAddressBtn" data-dojo-attach-event="onclick:onUseAddressClick">${nls.useAddressBtn}</div>
+
+          <div id="use_location" class="jimu-btn" data-dojo-attach-point="useLocationBtn" data-dojo-attach-event="onclick:onUseLocationClick">${nls.useLocationBtn}</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="draw" class="tab-view" data-dojo-attach-point="drawTabView">
+      <div id="drawing_tools" class="panel-item" data-dojo-attach-point="drawingTools">
+        <span class='jimu-widget-title'><h2>${nls.drawTitle}</h2></span>
+
+        <div data-dojo-attach-point="drawBox" data-dojo-type="jimu/dijit/DrawBox" data-dojo-props="types:['point','polyline','polygon'],showClear:false"></div>
+      </div>
+    </div>
+
+    <div id="add" class="tab-view" data-dojo-attach-point="addTabView">
+      <div id="sub_layer" class="panel-item hidden" data-dojo-attach-point="subLayerSelection">
+        <span class='jimu-widget-title'><h2>${nls.subLayerSelectionTitle}</h2></span>
+
+        <select id="sub_layer_box" data-dojo-attach-point="subLayerSelectionBox">
+          <option disabled selected value="default">${nls.defaultSubLayer}</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="submit" class="btns-container">
+    <div id="submit_btn" class="jimu-btn jimu-state-disabled" data-dojo-attach-point="submitBtn" data-dojo-attach-event="onclick:onSubmitClick">${nls.submitBtn}</div>
+  </div>
+
+  <div class="progress-bar-container">
+    <div id="progress_bar" data-dojo-attach-point="progressBar" data-dojo-type="dijit/ProgressBar" data-dojo-props='value:Infinity'></div>
+  </div>
+</div>
