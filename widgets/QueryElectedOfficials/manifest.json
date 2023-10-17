@@ -1,0 +1,10 @@
+{
+  "name": "QueryElectedOfficials",
+  "platform": "HTML",
+  "version": "2.10",
+  "wabVersion": "2.10",
+  "author": "Xuan Kuai",
+  "description": "This is the widget that displays information fetched from the Query Geometry widget.",
+  "copyright": "",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0"
+}

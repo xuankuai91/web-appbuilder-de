@@ -1,0 +1,182 @@
+<div>
+  <div class='tab-header' data-dojo-attach-point='tabHeader' data-dojo-attach-event='onclick:onTabHeaderClick'>
+    <div class='tab-item jimu-ellipsis jimu-float-leading selected' data-dojo-attach-point='fedTabItem'>${nls.fedLabel}</div>
+    <div class='tab-item jimu-ellipsis jimu-float-leading' data-dojo-attach-point='stateTabItem'>${nls.stateLabel}</div>
+    <div class='tab-item jimu-ellipsis jimu-float-leading' data-dojo-attach-point='countyTabItem'>${nls.countyLabel}</div>
+    <div class='tab-item jimu-ellipsis jimu-float-leading' data-dojo-attach-point='cityTabItem'>${nls.cityLabel}</div>
+    <div class='tab-item jimu-ellipsis jimu-float-leading' data-dojo-attach-point='othersTabItem'>${nls.othersLabel}</div>
+  </div>
+
+  <div class='tab-container' data-dojo-attach-point='tabView'>
+    <div class='tab-view selected' data-dojo-attach-point='fedTabView'>
+      <span class='jimu-widget-title'><h2>${nls.usSenator}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>${nls.name}Ted Cruz</p>
+        <p class='jimu-widget'>${nls.term}1/3/2025</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a href='https://www.cruz.senate.gov/' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.usSenator}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>${nls.name}John Cornyn</p>
+        <p class='jimu-widget'>${nls.term}1/3/2027</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a href='https://www.cornyn.senate.gov/' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.usCongressRepTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='usCongressRepDist'>${nls.dist}</span>
+          <span><button id='usCongressRepToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='usCongressRepName'>${nls.name}</p>
+        <p class='jimu-widget'>${nls.term}1/3/2023</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='usCongressRepLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+    </div>
+
+    <div class='tab-view' data-dojo-attach-point='stateTabView'>
+      <span class='jimu-widget-title'><h2>${nls.governorTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>${nls.name}Greg Abbott</p>
+        <p class='jimu-widget'>${nls.term}1/17/2023</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a href='https://gov.texas.gov/' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.txSenatorTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='txSenatorDist'>${nls.dist}</span>
+          <span><button id='txSenatorToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='txSenatorName'>${nls.name}</p>
+        <p class='jimu-widget'>${nls.term}1/9/2023</a></p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='txSenatorLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.txHouseTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='txHouseRepDist'>${nls.dist}</span>
+          <span><button id='txHouseRepToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='txHouseRepName'>${nls.name}</p>
+        <p class='jimu-widget'>${nls.term}1/9/2023</a></p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='txHouseRepLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+    </div>
+
+    <div class='tab-view' data-dojo-attach-point='countyTabView'>
+      <span class='jimu-widget-title'><h2>${nls.countyJudgeTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='countyJudgeCounty'>${nls.county}</span>
+          <span><button id='countyJudgeToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='countyJudgeName'>${nls.name}</p>
+        <p class='jimu-widget' data-dojo-attach-point='countyJudgeTerm'>${nls.term}</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='countyJudgeLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.countyCommTitle}</h2></span>
+      <div class='official-info'>
+        <p class='jimu-widget' data-dojo-attach-point='countyCommCounty'>${nls.county}</p>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='countyCommPrecinct'>${nls.precinct}</span>
+          <span><button id='countyCommToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='countyCommName'>${nls.name}</p>
+        <p class='jimu-widget' data-dojo-attach-point='countyCommTerm'>${nls.term}</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='countyCommLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+    </div>
+
+    <div class='tab-view' data-dojo-attach-point='cityTabView'>
+      <span class='jimu-widget-title'><h2>${nls.cityMayorTitle}</h2></span>
+      <div class='official-info' data-dojo-attach-point='cityMayor'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='cityMayorCity'>${nls.city}</span>
+          <span><button id='cityMayorToggle' class='toggle-button' data-dojo-attach-point='cityMayorToggle'>${nls.showBoundary}</button></span>
+        </p>
+
+        <p class='jimu-widget' data-dojo-attach-point='cityMayorName'>${nls.name}</p>
+        <p class='jimu-widget' data-dojo-attach-point='cityMayorTerm'>${nls.term}</p>
+        <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='cityMayorLink' target='_blank'>${nls.clickHere}</a></p>
+      </div>
+
+      <span class='jimu-widget-title'><h2>${nls.cityCouncilTitle}</h2></span>
+      <div class='official-info' data-dojo-attach-point='cityCouncil'>
+        <p class='jimu-widget' data-dojo-attach-point='cityCouncilCity'>${nls.city}</p>
+
+        <div id='cityCouncilSD' data-dojo-attach-point='cityCouncilSD'>
+          <h5 class='jimu-widget-note'>${nls.distRepTitle}</h5>
+
+          <p class='jimu-widget'>
+            <span data-dojo-attach-point='cityCouncilSDDist'>${nls.dist}</span>
+            <span><button id='cityCouncilToggle' class='toggle-button' data-dojo-attach-point='cityCouncilToggle'>${nls.showBoundary}</button></span>
+          </p>
+
+          <p class='jimu-widget' data-dojo-attach-point='cityCouncilSDName'>${nls.name}</p>
+          <p class='jimu-widget' data-dojo-attach-point='cityCouncilSDTerm'>${nls.term}</p>
+          <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='cityCouncilSDLink' target='_blank'>${nls.clickHere}</a></p>
+        </div>        
+
+        <div data-dojo-attach-point='cityCouncilAL'></div>
+
+        <div class='page-control' data-dojo-attach-point='cityCouncilPageControl'>
+          <span><button disabled='true' data-dojo-attach-point='cityCouncilPrevPage' data-dojo-attach-event='onclick:onCityCouncilPrevPageClick'>&#706</button></span>
+          <span data-dojo-attach-point='cityCouncilPageNo'>
+            <span class='jimu-widget' data-dojo-attach-point='cityCouncilCurrentPage'>1</span>
+            <span class='jimu-widget'>${nls.of}</span>
+            <span class='jimu-widget' data-dojo-attach-point='cityCouncilTotalPage'></span>
+          </span>
+          <span><button class='next-page' data-dojo-attach-point='cityCouncilNextPage' data-dojo-attach-event='onclick:onCityCouncilNextPageClick'>&#707</button></span>
+        </div>
+      </div>
+    </div>
+
+    <div class='tab-view' data-dojo-attach-point='othersTabView'>
+      <span class='jimu-widget-title'><h2>${nls.schoolDistTitle}</h2></span>
+      <div class='official-info' data-dojo-attach-point='schoolDist'>
+        <p class='jimu-widget'>
+          <span data-dojo-attach-point='schoolDist'>${nls.schoolDist}</span>
+          <span ><button id='schoolDistToggle' class='toggle-button'>${nls.showBoundary}</button></span>
+        </p>
+
+        <div id='schoolDistSD' data-dojo-attach-point='schoolDistSD'>
+          <h5 class='jimu-widget-note'>${nls.distTrusteeTitle}</h5>
+
+          <p class='jimu-widget'>
+            <span data-dojo-attach-point='schoolDistSDDist'>${nls.dist}</span>
+            <span><button id='trusteeDistToggle' class='toggle-button' data-dojo-attach-point='trusteeDistToggle'>${nls.showBoundary}</button></span>
+          </p>
+
+          <p class='jimu-widget' data-dojo-attach-point='schoolDistSDName'>${nls.name}</p>
+          <p class='jimu-widget' data-dojo-attach-point='schoolDistSDTerm'>${nls.term}</p>
+          <p class='jimu-widget'>${nls.moreInfo}<a data-dojo-attach-point='schoolDistSDLink' target='_blank'>${nls.clickHere}</a></p>
+        </div>        
+
+        <div data-dojo-attach-point='schoolDistAL'></div>
+
+        <div class='page-control' data-dojo-attach-point='schoolDistPageControl'>
+          <span><button disabled='true' data-dojo-attach-point='schoolDistPrevPage' data-dojo-attach-event='onclick:onSchoolDistPrevPageClick'>&#706</button></span>
+          <span class='page-no' data-dojo-attach-point='schoolDistPageNo'>
+            <span class='jimu-widget' data-dojo-attach-point='schoolDistCurrentPage'>1</span>
+            <span class='jimu-widget'>${nls.of}</span>
+            <span class='jimu-widget' data-dojo-attach-point='schoolDistTotalPage'></span>
+          </span>
+          <span class='next-page' ><button data-dojo-attach-point='schoolDistNextPage' data-dojo-attach-event='onclick:onSchoolDistNextPageClick'>&#707</button></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id='export_btn' class='btns-container'>
+    <div id='export' class='jimu-btn' data-dojo-attach-event='onclick:onExportClick'>${nls.exportBtn}</div>
+  </div>
+</div>
