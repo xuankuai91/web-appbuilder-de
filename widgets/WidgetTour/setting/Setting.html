@@ -1,0 +1,33 @@
+<div>
+	<div id="app_title">
+		<div class="row">
+			<div class="cell">
+				<label>${nls.appTitle}</label>
+			</div>
+
+			<input class="app-title" data-dojo-attach-point="appNameText" />
+		</div>
+	</div>
+
+	<div id="widget_list" data-dojo-attach-point="widgetList">
+		<p>${nls.instructions}</p>
+
+		<div class="row">
+			<div class="cell">
+				<label>${nls.selectWidget}</label>
+			</div>
+
+			<select id="widget_selection" data-dojo-attach-point="widgetSelection" data-dojo-attach-event="onchange:onWidgetSelect">
+	        	<option disabled selected value="default">${nls.defaultWidget}</option>
+	        </select>
+		</div>
+
+        <table data-dojo-attach-point="widgetList">
+        	<th class="step">${nls.step}</th>
+        	<th class="widget-id">${nls.widgetID}</th>
+        	<th class="widget-name">${nls.widgetName}</th>
+        	<th class="widget-intro">${nls.widgetIntro}</th>
+        	<th class="actions">${nls.actions}</th>
+        </table>
+	</div>
+</div>

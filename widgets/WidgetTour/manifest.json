@@ -1,0 +1,15 @@
+{
+  "name": "WidgetTour",
+  "platform": "HTML",
+  "version": "1.0",
+  "wabVersion": "1.0",
+  "author": "Xuan Kuai",
+  "description": "This is a widget that launches widget tour with IntroJS",
+  "copyright": "2018",
+  "license": "http://www.apache.org/licenses/LICENSE-2.0",
+  "properties": {
+    "inPanel": false,
+    "hasUIFile": false,
+    "supportMultiInstance": false
+  }
+}

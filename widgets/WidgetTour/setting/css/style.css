@@ -1,0 +1,74 @@
+.row {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.cell {
+  display: inline-block;
+  width: 120px;
+}
+
+.app-title {
+  height: 30px;
+  padding-left: 5px;
+  width: 200px;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+select {
+  height: 30px;
+  width: 200px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #888888;
+  border: 1px solid #bfbfbf;
+  color: white;
+  height: 30px;
+  padding-left: 5px;
+}
+
+td {
+  border: 1px solid #bfbfbf;
+  height: 30px;
+}
+
+.step {
+  width: 5%;
+}
+
+.widget-id {
+  width: 20%;
+}
+
+.widget-name {
+  width: 15%;
+}
+
+.actions {
+  width: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button {
+ width: 100%;
+}
+
+td > input {
+  border: none;
+  height: 100%;
+  padding-left: 5px;
+  width: 100%;
+}
