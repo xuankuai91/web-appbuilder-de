@@ -103,8 +103,7 @@ define([
 
         setConfig: function() { // Initialize widget settings dialog
           // Get app ID number and use the app ID number to get app's config.json
-          var rootURL = window.location.origin;
-          var appID = window.location.href.slice(-1);
+          var appID = window.location.href.split('=')[1];
           var jsonURL = "/webappbuilder/apps/" + appID + "/config.json";
 
           // Collect all widgets added to app
