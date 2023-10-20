@@ -19,6 +19,6 @@
 1. Add the *Widget Tour* widget and click *OK* to the *Configure Widget Tour* dialog.
    ![Add_Widget](https://github.com/xuankuai91/web-appbuilder-de/assets/22385797/a867f0b9-1bf7-43d6-8055-f6b318eaca29)
 1. Edit the app title if needed. Then select the widgets to be included in widget tour from the *Select widget* dropdown to populate the widget table below, and paste the ```id``` copied above under *Widget Identifier*. Add necessary instruction texts under *Widget Instruction*, and edit widget names if needed under *Widget Name*. Then click *OK* to finish configuration and add widget to app.
-   ![Configure_Widget](https://github.com/xuankuai91/web-appbuilder-de/assets/22385797/5872b997-4995-48c5-b81a-40608180d686)
+   ![image](https://github.com/xuankuai91/web-appbuilder-de/assets/22385797/a4df3bf8-c262-4c7e-b5c4-bb155ce8f7d6)
 1. Fire up the *Widget Tour* widget and test. Make changes if necessary.
    ![Test_Widget](https://github.com/xuankuai91/web-appbuilder-de/assets/22385797/5dd4e828-a8ab-4414-94aa-c264802dd6c4)
